@@ -11,19 +11,7 @@ using pll = pair<ll, ll>;
 
 const int M = 1e9+7;
 
-inline void fast_cin() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-}
-
-template<typename T>
-void print(T arr) {
-	for(auto element: arr) {
-		cout << element << " ";
-	}
-	cout << endl;
-}
+inline void fast_cin() {ios_base::sync_with_stdio(false); cin.tie(nullptr);cout.tie(nullptr);}
 
 int main() {
     return 0;
