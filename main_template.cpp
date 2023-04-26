@@ -10,7 +10,7 @@ using pi = pair<int, int>;
 using pll = pair<ll, ll>;
 
 const int M = 1e9+7;
-const double pi = 3.1415926535897932384626433832795;
+const double PI = 3.1415926535897932384626433832795;
 
 inline void fast_cin() {ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);}
 string to_upper(string a) { transform(a.begin(), a.end(), a.begin(), ::toupper); return a; }
