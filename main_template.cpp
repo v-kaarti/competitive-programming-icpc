@@ -43,6 +43,7 @@ using vpd = vector<pd>;
 // Constant table
 const int M = 1e9+7;
 const double PI = 3.1415926535897932384626433832795;
+const int dx[4] = {1,0,-1,0}, dy[4] = {0,1,0,-1};
 
 // FastIO
 inline void fast_cin() {ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);}
