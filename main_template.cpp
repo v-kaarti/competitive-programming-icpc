@@ -40,6 +40,11 @@ using vpd = vector<pd>;
 #define eb emplace_back
 #define pf push_front
 
+// Pair operations
+#define mp make_pair
+#define f first
+#define s second
+
 // Constant table
 const int M = 1e9+7;
 const double PI = 3.1415926535897932384626433832795;
