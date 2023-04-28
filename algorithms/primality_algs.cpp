@@ -65,7 +65,7 @@ bool miller_rabin(
     }
     for (int i = 0; i < iter; i++) {
         int a = 2 + rand() % (n - 3);
-        if (check_composite(n, a, d, s))
+        if (check_composite_u64(n, a, d, s))
             return false;
     }
     return true;
@@ -85,7 +85,7 @@ bool miller_rabin_det(u64 n) {
     for (int a : {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37}) {
         if (n == a)
             return true;
-        if (check_composite(n, a, d, r))
+        if (check_composite_u64(n, a, d, r))
             return false;
     }
     return true;
