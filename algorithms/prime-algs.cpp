@@ -1,5 +1,5 @@
-vector<bool> root_sieve(int n){
-    vector<bool> is_prime(n+1, true);
+vector<bool> root_sieve(int n) {
+    vector<bool> is_prime(n + 1, true);
     is_prime[0] = is_prime[1] = false;
     for (int i = 2; i * i <= n; i++) {
         if (is_prime[i]) {
@@ -12,7 +12,6 @@ vector<bool> root_sieve(int n){
 
 int count_primes(int n) {
     const int S = 10000;
-
     vector<int> primes;
     int nsqrt = sqrt(n);
     vector<char> is_prime(nsqrt + 2, true);
@@ -23,7 +22,6 @@ int count_primes(int n) {
                 is_prime[j] = false;
         }
     }
-
     int result = 0;
     vector<char> block(S);
     for (int k = 0; k * S <= n; k++) {
@@ -56,7 +54,6 @@ vector<char> range_primes(long long L, long long R) {
                 mark[j] = true;
         }
     }
-
     vector<char> is_prime(R - L + 1, true);
     for (long long i : primes)
         for (long long j = max(i * i, (L + i - 1) / i * i); j <= R; j += i)
