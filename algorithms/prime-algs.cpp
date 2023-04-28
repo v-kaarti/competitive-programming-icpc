@@ -57,11 +57,11 @@ vector<char> range_primes(long long L, long long R) {
         }
     }
 
-    vector<char> isPrime(R - L + 1, true);
+    vector<char> is_prime(R - L + 1, true);
     for (long long i : primes)
         for (long long j = max(i * i, (L + i - 1) / i * i); j <= R; j += i)
-            isPrime[j - L] = false;
+            is_prime[j - L] = false;
     if (L == 1)
-        isPrime[0] = false;
-    return isPrime;
+        is_prime[0] = false;
+    return is_prime;
 }
