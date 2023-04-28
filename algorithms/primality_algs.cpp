@@ -52,9 +52,7 @@ bool prime_fermat(int n, int iter = 5) {
 
 // Miller-Rabin
 
-bool miller_rabin(
-    u64 n,
-    int iter = 5) { 
+bool miller_rabin(u64 n, int iter = 5) {
     if (n < 4)
         return n == 2 || n == 3;
     int s = 0;
