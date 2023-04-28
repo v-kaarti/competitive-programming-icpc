@@ -1,5 +1,21 @@
+using u64 = uint64_t;
+using u128 = __uint128_t;
+
 // Fermat
 
+u64 binpow_m(u64 base, u64 e, u64 mod) {
+    u64 result = 1;
+    base %= mod;
+    while (e) {
+        if (e & 1)
+            result = (u128)result * base % mod;
+        base = (u128)base * base % mod;
+        e >>= 1;
+    }
+    return result;
+}
+
+/* 
 long long binpow_m(long long a, long long b, long long m) {
     a %= m;
     long long res = 1;
@@ -11,6 +27,7 @@ long long binpow_m(long long a, long long b, long long m) {
     }
     return res;
 }
+*/
 
 bool prime_fermat(int n, int iter = 5) {
     if (n < 4)
@@ -24,20 +41,6 @@ bool prime_fermat(int n, int iter = 5) {
 }
 
 // Miller-Rabin
-
-using u64 = uint64_t;
-using u128 = __uint128_t;
-u64 binpow_m(u64 base, u64 e, u64 mod) {
-    u64 result = 1;
-    base %= mod;
-    while (e) {
-        if (e & 1)
-            result = (u128)result * base % mod;
-        base = (u128)base * base % mod;
-        e >>= 1;
-    }
-    return result;
-}
 
 bool check_composite(u64 n, u64 a, u64 d, int s) {
     u64 x = binpow_m(a, d, n);
