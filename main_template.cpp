@@ -61,9 +61,9 @@ string to_upper(string a) { transform(a.begin(), a.end(), a.begin(), ::toupper);
 string to_lower(string a) { transform(a.begin(), a.end(), a.begin(), ::tolower); return a; }
 
 // Print / Debug
-template<typename T> void print_i(const T& arr) {cout << "{"; for (const auto& element: arr) {cout << element << ", ";} cout << "\b\b}\n";}
-template<typename K, typename V> void print_m(const map<K, V>& m) { for (const auto& [k, v] : m) { cout << "{" << k << " : " << v << "} "; } cout << '\n'; }
-template<typename K, typename V> void print_m(const unordered_map<K, V>& m) { for (const auto& [k, v] : m) { cout << "{" << k << " : " << v << "} "; } cout << '\n'; }
+template<typename T> void print_i(const T &arr) {cout << "{"; for (const auto &element: arr) {cout << element << ", ";} cout << "\b\b}\n";}
+template<typename K, typename V> void print_m(const map<K, V> &m) { for (const auto &[k, v] : m) { cout << "{" << k << " : " << v << "} "; } cout << '\n'; }
+template<typename K, typename V> void print_m(const unordered_map<K, V> &m) { for (const auto &[k, v] : m) { cout << "{" << k << " : " << v << "} "; } cout << '\n'; }
 
 int main() {
     fast_cin();
