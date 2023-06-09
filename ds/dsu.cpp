@@ -16,4 +16,9 @@ int find(int v) {
 int union(int a, b) {
     a = find(a);
     b = find(b);
+    if (a != b) {
+        if (size[a] < size[b]) swap(a, b);
+        parent[b] = a;
+        size[a] += size[b];
+    }
 }
