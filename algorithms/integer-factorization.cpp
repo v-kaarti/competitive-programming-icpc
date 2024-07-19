@@ -1,3 +1,4 @@
+#include <../template.hpp>
 long long mult(long long a, long long b, long long mod) {
     return (__int128)a * b % mod;
 }

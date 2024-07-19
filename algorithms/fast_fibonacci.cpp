@@ -1,3 +1,4 @@
+#include <../template.hpp>
 struct matrix {
     long long mat[2][2];
     matrix friend operator*(const matrix &a, const matrix &b) {

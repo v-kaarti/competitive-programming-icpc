@@ -1,3 +1,4 @@
+#include <../template.hpp>
 using u64 = uint64_t;
 using u128 = __uint128_t;
 
