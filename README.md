@@ -1,5 +1,5 @@
 # competitive-programming-icpc
-Template and Algorithms for CP / Practice ICPC Problems
+Template and algorithms for CP/practice ICPC problems
 
 Hi there! 🚧 This repo is under construction 👷‍♂️
 
