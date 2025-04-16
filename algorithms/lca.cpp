@@ -1,4 +1,5 @@
-#include <../template.hpp>
+#include <bits/stdc++.h>
+using namespace std;
 
 int n, l;
 vector<vector<int>> adj;

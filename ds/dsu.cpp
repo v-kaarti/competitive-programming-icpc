@@ -1,4 +1,6 @@
-#include <../template.hpp>
+#include <bits/stdc++.h>
+using namespace std;
+
 #define SIZE INT_MAX
 vector<int> parent(SIZE);
 vector<int> s(SIZE, 1);
